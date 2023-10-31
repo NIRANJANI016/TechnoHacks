@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#offerings">Offerings</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>W E B__D E V E L O P E R</p><br>
+        <h1>Hi,I'm <span>Niranjani Nithiyakumar, From Chennai,India</span></h1>
+        
+
+      </div>
+    </div>
+  </div>
+ 
+  <!---------------this is about section  -------------------->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img2.JPEG" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I'm Niranjani Nithiyakumar, 
+            and I'm currently pursuing my Bachelor of Engineering in Computer Science. 
+            I'm thrilled to be here today to introduce myself and share a bit about my background and interests.
+            From a young age, I've always been fascinated by the world of technology and computers.
+            This fascination led me to choose Computer Science as my field of study. Over the years, 
+            I've had the opportunity to delve into various aspects of computer science.
+          </p> <br>
+          <div class="tab-titles">
+            <div class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </div>
+        
+            
+            <div class="tab-links" onclick="opentab('education')">
+              Education
+            </div>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Cloud Computing</span><br />  
+              <li><span>Web Development</span><br /> 
+                 </ul>
+          </div>
+           
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2018</span><br />SAJV</span><br />SSLC</li>
+              <li><span>2020</span><br />SGHV</span><br />HSLC</li>
+              <li><span>2024</span><br />RIT</span><br />BE.Computer Science And Engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------offerings------------------------->
+  <div id="offerings">
+    <div class="container">
+      <h1 class="sub-title">My Offerings</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>WEB DEV</h2>
+          <p>
+            As a  Web Designer, my services involves creating, building, and maintaining websites and web applications.
+            Development like front-end and back-end Full stack etc.  
+          </p>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>Cloud Engineer</h2>
+          <p>
+            and I'm passionate about exploring the cutting-edge world of
+             cloud computing through research and innovation. It's a pleasure to introduce
+              myself and share my background and research interests with you.
+              I hold a deep fascination for the transformative potential of cloud computing. 
+          </p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- ------------------Portfolio-------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Certification</h1>
+      <div class="services-list">
+        <div>
+          <h2>Guvi</h2>
+          <p>
+              “Steps into Robotics Process Automation”
+              <br/> 
+              “Game Development Using Pygame”  
+           </p>
+        </div>
+        
+        <div>
+          <h2>Udemy</h2>
+          <p>
+            Master Course In Advanced SEO (Search Engine Optimization).
+            <br/>
+            Reverse Engineering .NET For Beginners(Visual Basics).
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------Contact----------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fab fa-paper-plane"></i>niranjaninithiyakumar@gmail.com</p>
+          <p><i class="fab fa-phone-square-alt"></i> 90032XXX</p>
+          <div class="social-icons">
+            
+            
+            <a href="https://www.linkedin.com/in/niranjani-nithiyakumar-11896b200" target="_blank"> <i
+                class="fab fa-linkedin"></i></a>
+          
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Mrssage" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ niranjaninithiyakumar</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+
+</html>
+<!------end of the code------>
